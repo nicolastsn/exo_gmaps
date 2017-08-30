@@ -1,0 +1,34 @@
+
+<html contenteditable="false">
+    <head>
+        <link rel="stylesheet" type="text/css" href="reset.css">
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <script src="jquery.min.js"></script>
+        <script src="script.js"></script>
+        <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCjMni2-TMcersK35MJw4xDkjSOptVn8jU&callback=initMap"></script>
+    </head>
+    <body>
+
+      <h1>Google Maps API</h1>
+      <form id='LatLng'>
+        <div>
+          <label for="lat">Latitude</label>
+          <input type="text" name="lat" value=48.85231258484184>
+        </div>
+        <div>
+          <label for="lng">Longitude</label>
+          <input type="text" name="lng" value=2.3345088958740234>
+        </div>
+        <div>
+          <label for="msg">Message</label>
+          <input type="text" name="msg" value="Tiger">
+        </div>
+        
+          <input id="submit" type="submit" name="submit" value="Put Marker">
+        
+      </form>
+
+      <div id="googleMap" class="map" style="width:100%;height:400px;"></div>
+
+    </body>
+</html>
